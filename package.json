@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "server": "json-server -d 750 -w -p 3333 ./server.js"
+    "server": "json-server -d 750 -w -p 3334 ./server.js"
   },
   "dependencies": {
     "next": "10.2.0",
