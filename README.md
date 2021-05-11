@@ -59,6 +59,8 @@ function Component() {
 
 ### Quando deve ser utilizado:
 
+Quando temos uma função que precisa ser repassada para os componentes filhos da nossa aplicação.
+
 
 
 
