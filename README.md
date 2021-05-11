@@ -1,4 +1,13 @@
-# Pai para filho
+# Fluxo de renderização no ReactJS
+
+1. Gerar uma nova versão do componente que precisa ser renderizado;
+2. Comparar essa nova versão com a versão anterior já salva na página;
+3. Se houverem alterações, o React "renderiza" essa nova versão em tela;
+
+# Situações que os componentes são renderizados:
+
+## Pai para filho 
+#### Quando o componente pai é renderizado
 
 ```tsx
 <Parent>
@@ -6,15 +15,16 @@
 </Parent>
 ```
 
-# Propriedade
-
+## Propriedade
+#### Quando uma propriedade é alterada
 ```tsx
 <Parent title="">
   <Children />
 </Parent>
 ```
 
-# Hooks (useState, useContext, useReducer)
+## Hooks (useState, useContext, useReducer)
+#### Quando um hook é executado
 
 ```tsx
 function Component() {
@@ -23,12 +33,9 @@ function Component() {
 }
 
 ```
+---
 
-# Fluxo de renderização
-
-1. Gerar uma nova versão do componente que precisa ser renderizado;
-2. Comparar essa nova versão com a versão anterior já salva na página;
-3. Se houverem alterações, o React "renderiza" essa nova versão em tela;
+# Estratégias de otimização:
 
 ---
 
@@ -45,8 +52,13 @@ function Component() {
 
 ### Quando deve ser utilizado:
 
-1. Cálculos pesados
+1. Cálculos pesados // o useMemo serve para armazenar um valor
 2. Igualdade referencial // quando a gente repassa aquela informação a um componente filho
+
+## UseCallback
+
+### Quando deve ser utilizado:
+
 
 
 
