@@ -32,7 +32,7 @@ function Component() {
 
 ---
 
-## Utilização do react memo
+## Memo
 
 ### Quando deve ser utilizado:
 
@@ -41,6 +41,12 @@ function Component() {
 3. Re-renders with same props. // componentes que renderizam com as mesmas props
 4. Medium to big size. // Em componentes pequenos o memo não traz grandes ganhos para aplicação
 
+## UseMemo
+
+### Quando deve ser utilizado:
+
+1. Cálculos pesados
+2. Igualdade referencial // quando a gente repassa aquela informação a um componente filho
 
 
 
